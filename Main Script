@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Meteor Ley System", HidePremium = false, SaveConfig = true, ConfigFolder = "Key System"})
+local Window = OrionLib:MakeWindow({Name = "Meteor Key System", HidePremium = false, SaveConfig = true, ConfigFolder = "Key System"})
 
 OrionLib:MakeNotification({
 	Name = "Logged in",
