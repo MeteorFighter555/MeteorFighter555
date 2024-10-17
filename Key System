@@ -1,0 +1,44 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Meteor Ley System", HidePremium = false, SaveConfig = true, ConfigFolder = "Key System"})
+
+OrionLib:MakeNotification({
+	Name = "Logged in",
+	Content = "You are logged in as"..Player.name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 30
+})
+
+_G.Key = "U2FsdGVkX1K4SievxE0XkAwmbhCxwHrQPWJ4StSvHKLddzIGLD4g"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+	
+end
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		      _G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key",
+	Callback = function()
+      		if _G.KeyInput == _G.Key then
+      			MakeScriptHub()
+      			OrionLib:Destroy()
+      		end
+		
+  	end    
+})
+
