@@ -18,34 +18,6 @@ function MakeScriptHub()
 
 local Window = OrionLib:MakeWindow({Name = "Meteor Exploitz Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MeteorHub"})
 	
-	local UtilTab = Window:MakeTab({
-	Name = "Utility",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-	
-UtilTab:AddButton({
-	Name = "Click TP",
-	Callback = function()
-      		mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = "Click Teleport"
-tool.Activated:connect(function()
-local pos = mouse.Hit+Vector3.new(0,2.5,0)
-pos = CFrame.new(pos.X,pos.Y,pos.Z)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-end)
-tool.Parent = game.Players.LocalPlayer.Backpack
-  	end    
-})
-
-UtilTab:AddButton({
-	Name = "Parkour",
-	Callback = function()
-loadstring(game:HttpGet(('https://pastefy.app/6HAb8rAj/raw'),true))()
-  end
-})
 
 local LookTab = Window:MakeTab({
 	Name = "Shaders/Looks",
