@@ -231,7 +231,7 @@ local LookTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Shaders","Makes things beautiful")
+LookTab:AddParagraph("Shaders","Makes things beautiful")
 
   LookTab:AddButton({
 	Name = "FPS Boost",
