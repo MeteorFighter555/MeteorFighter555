@@ -18,13 +18,28 @@ function MakeScriptHub()
 
 local Window = OrionLib:MakeWindow({Name = "Meteor Exploitz Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MeteorHub"})
 
+local HomeTab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+HomeTab:AddParagraph("Welcome","Thank you for using this! By MeteorFighter")
+
+HomeTab:AddButton({
+	Name = "Remove Gui",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
 local MainTab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-MainTab:AddParagraph("Paragraph","Paragraph Content")
+
 
 end
 
