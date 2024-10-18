@@ -250,12 +250,31 @@ loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
 })
 
   LookTab:AddButton({
-	Name = "RTX Shaders",
+	Name = "Bloom Shaders",
 	Callback = function(value)
-loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+-- Script made by Harryboharps
+-- Shoutout to Claude
+
+bloom = Instance.new("BloomEffect",game.Lighting) -- BLOOM Properties
+bloom.Intensity = 1
+bloom.Size = 56
+bloom.Threshold = 0.5
+
+blur = Instance.new("BlurEffect",game.Lighting) -- BLUR Properties
+blur.Size = 5
+
+color = Instance.new("ColorCorrectionEffect",game.Ligting) -- COLORCORRECTION Properties
+color.TintColor = Color3.fromRGB(216,216,216)
+
+rays = Instance.new("SunRaysEffect",game.Lighting) -- SUNRAYS Properties
+rays.Intensity = 0.25
+rays.Spread = 1
+
+print("Shoutout to my cousin ben.")
 	  
   	end
   })
+
 
 
 
