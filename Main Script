@@ -18,25 +18,6 @@ function MakeScriptHub()
 
 local Window = OrionLib:MakeWindow({Name = "Meteor Exploitz Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MeteorHub"})
 	
-
-
-
-
-local FishTab = Window:MakeTab({
-	Name = "Fisch",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-  FishTab:AddButton({
-	Name = "Fisch Gui",
-	Callback = function(value)
-	        setclipboard("FischNew87923!GoodRoblox")
-         toclipboard("FischNew87923!GoodRoblox")
-		        loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Fisch/refs/heads/main/New"))()
-  	end    
-})
-	
 	local UtilTab = Window:MakeTab({
 	Name = "Utility",
 	Icon = "rbxassetid://4483345998",
