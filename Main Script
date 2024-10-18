@@ -18,6 +18,14 @@ function MakeScriptHub()
 
 local Window = OrionLib:MakeWindow({Name = "Meteor Exploitz Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MeteorHub"})
 
+local MainTab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MainTab:AddParagraph("Paragraph","Paragraph Content")
+
 end
 
 local Tab = Window:MakeTab({
