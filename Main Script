@@ -219,6 +219,13 @@ tool.Parent = game.Players.LocalPlayer.Backpack
   	end    
 })
 
+UtilTab:AddButton({
+	Name = "Parkour",
+	Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/6HAb8rAj/raw'),true))()
+  end
+})
+
 local LookTab = Window:MakeTab({
 	Name = "Shaders/Looks",
 	Icon = "rbxassetid://4483345998",
