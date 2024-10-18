@@ -20,78 +20,7 @@ local Window = OrionLib:MakeWindow({Name = "Meteor Exploitz Hub", HidePremium = 
 	
 
 
-local TsbTab = Window:MakeTab({
-	Name = "Tsb",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-  
-  TsbTab:AddButton({
-	Name = "Gojo Moveset",
-	Callback = function(value)
-		      loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua"))()
-	  
-  	end    
-})
 
-  TsbTab:AddButton({
-	Name = "Toji Moveset",
-	Callback = function(value)
-		      loadstring(game:HttpGet('https://pastebin.com/raw/VQnyWP5D'))()
-	  
-  	end    
-})
-
-  TsbTab:AddButton({
-	Name = "Kung Fu Moveset",
-	Callback = function(value)
-      loadstring(game:HttpGet("https://pastebin.com/raw/DqXUTANt"))()
-	  
-  	end    
-})
-
-  TsbTab:AddButton({
-	Name = "Sonic Moveset",
-	Callback = function(value)
-       loadstring(game:HttpGet("https://pastebin.com/raw/7V1mUBtQ"))()
-		
-  	end    
-})
-
-  TsbTab:AddButton({
-	Name = "Apophenia Moveset",
-	Callback = function(value)
-       getgenv().Music = false
-       getgenv().AttackQuality = 'High'
-       getgenv().ConstantSpeed = false
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
-		
-  	end    
-})
-
-  TsbTab:AddButton({
-	Name = "God Kung Fu Moveset",
-	Callback = function(value)
-		      loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()
-		
-  	end    
-})
-
-  TsbTab:AddButton({
-	Name = "Dio Moveset",
-	Callback = function(value)
-		       loadstring(game:HttpGet("https://raw.githubusercontent.com/Medley-Taboritsky/RobloxScripting/refs/heads/main/DIO_Garou_TSB"))()
-		
-  	end    
-})
-
-  TsbTab:AddButton({
-	Name = "Aucuara Moveset",
-	Callback = function(value)
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
-		
-  	end    
-})
 
 local FishTab = Window:MakeTab({
 	Name = "Fisch",
