@@ -109,6 +109,22 @@ end)
   	end
   })
 
+UtilTab:AddButton({
+	Name = "Click TP",
+	Callback = function()
+      		mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+
 GlobalTab:AddLabel("Fun/Useful")
 
   GlobalTab:AddButton({
@@ -127,20 +143,11 @@ GlobalTab:AddLabel("Fun/Useful")
   	end    
 })
 
-GlobalTab:AddButton({
-	Name = "Click TP",
+UtilTab:AddButton({
+	Name = "Parkour",
 	Callback = function()
-      		mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = "Click Teleport"
-tool.Activated:connect(function()
-local pos = mouse.Hit+Vector3.new(0,2.5,0)
-pos = CFrame.new(pos.X,pos.Y,pos.Z)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-end)
-tool.Parent = game.Players.LocalPlayer.Backpack
-  	end    
+loadstring(game:HttpGet(('https://pastefy.app/6HAb8rAj/raw'),true))()
+  end
 })
 
 
