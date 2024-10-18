@@ -13,101 +13,12 @@ _G.Key = "U2FsdGVkX1K4SievxE0XkAwmbhCxwHrQPWJ4StSvHKLddzIGLD4g"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
+
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Meteor Exploitz Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MeteorHub"})
 	
-local GlobalTab = Window:MakeTab({
-	Name = "Global",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-  
-  GlobalTab:AddButton({
-	Name = "Sonic Mode",
-	Callback = function(value)
-	       loadstring(game:HttpGetAsync("https://pastebin.com/raw/uacVtsWe"))()
-	  
-  	end    
-})
 
-  GlobalTab:AddButton({
-	Name = "Good Cop Bad Cop",
-	Callback = function(value)
-	       loadstring(game:HttpGetAsync("https://pastebin.com/raw/hSqRZPLd"))()
-	  
-  	end    
-})
-
-  GlobalTab:AddButton({
-	Name = "Keyboard",
-	Callback = function(value)
-		      loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-  	end    
-})
-
-  GlobalTab:AddButton({
-	Name = "Shiftlock",
-	Callback = function(value)
-	       loadstring(game:HttpGet('https://pastebin.com/raw/CjNsnSDy'))()
-		
-  	end    
-})
-
-  GlobalTab:AddButton({
-	Name = "Esp Script",
-	Callback = function(value)
-       local FillColor = Color3.fromRGB(175,25,255)
-local DepthMode = "AlwaysOnTop"
-local FillTransparency = 0.5
-local OutlineColor = Color3.fromRGB(255,255,255)
-local OutlineTransparency = 0
-
-local CoreGui = game:FindService("CoreGui")
-local Players = game:FindService("Players")
-local lp = Players.LocalPlayer
-local connections = {}
-
-local Storage = Instance.new("Folder")
-Storage.Parent = CoreGui
-Storage.Name = "Highlight_Storage"
-
-local function Highlight(plr)
-    local Highlight = Instance.new("Highlight")
-    Highlight.Name = plr.Name
-    Highlight.FillColor = FillColor
-    Highlight.DepthMode = DepthMode
-    Highlight.FillTransparency = FillTransparency
-    Highlight.OutlineColor = OutlineColor
-    Highlight.OutlineTransparency = 0
-    Highlight.Parent = Storage
-    
-    local plrchar = plr.Character
-    if plrchar then
-        Highlight.Adornee = plrchar
-    end
-
-    connections[plr] = plr.CharacterAdded:Connect(function(char)
-        Highlight.Adornee = char
-    end)
-end
-
-Players.PlayerAdded:Connect(Highlight)
-for i,v in next, Players:GetPlayers() do
-    Highlight(v)
-end
-
-Players.PlayerRemoving:Connect(function(plr)
-    local plrname = plr.Name
-    if Storage[plrname] then
-        Storage[plrname]:Destroy()
-    end
-    if connections[plr] then
-        connections[plr]:Disconnect()
-    end
-end)
-  	end
-  })
 
 local TsbTab = Window:MakeTab({
 	Name = "Tsb",
