@@ -33,7 +33,7 @@ HomeTab:AddButton({
   	end    
 })
 
-local MainTab = Window:MakeTab({
+local GlobalTab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
