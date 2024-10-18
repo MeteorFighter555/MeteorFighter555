@@ -111,7 +111,21 @@ end)
 
 GlobalTab:AddLabel("Fun/Useful")
 
+  GlobalTab:AddButton({
+	Name = "Sonic Mode",
+	Callback = function(value)
+	       loadstring(game:HttpGetAsync("https://pastebin.com/raw/uacVtsWe"))()
+	  
+  	end    
+})
 
+  GlobalTab:AddButton({
+	Name = "Good Cop Bad Cop",
+	Callback = function(value)
+	       loadstring(game:HttpGetAsync("https://pastebin.com/raw/hSqRZPLd"))()
+	  
+  	end    
+})
 
 end
 
