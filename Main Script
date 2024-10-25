@@ -303,7 +303,6 @@ end
 end
 })
 
-})
 end
 
 local Tab = Window:MakeTab({
