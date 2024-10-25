@@ -4,7 +4,7 @@ local Window = OrionLib:MakeWindow({Name = "Meteor Key System", HidePremium = fa
 
 OrionLib:MakeNotification({
 	Name = "Logged in",
-	Content = "You are logged in as"..Player.name..".",
+	Content = "You are logged in as "..Player.name..".",
 	Image = "rbxassetid://4483345998",
 	Time = 30
 })
