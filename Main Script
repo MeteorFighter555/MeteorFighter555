@@ -290,15 +290,16 @@ local FishTab = Window:MakeTab({
 })
 
   FishTab:AddButton({
-	Name = "Fisch Gui",
+	Name = "Auto Fish",
 	Callback = function(value)
-	        setclipboard("FischNew87923!GoodRoblox")
-         toclipboard("FischNew87923!GoodRoblox")
-		        loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Fisch/refs/heads/main/New"))()
-  	end    
-})
-
+	        loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Auto-Fish-20530"))()
 end
+
+  FishTab:AddButton({
+	Name = "Auto Fish",
+	Callback = function(value)
+	       loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Auto-Cast-n-Auto-Shake-20992"))()
+
 
 local Tab = Window:MakeTab({
 	Name = "Key",
