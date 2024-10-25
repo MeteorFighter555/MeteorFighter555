@@ -297,9 +297,9 @@ end
 })
 
   FishTab:AddButton({
-	Name = "Auto Fish",
+	Name = "Fisch Gui",
 	Callback = function(value)
-	       loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Auto-Cast-n-Auto-Shake-20992"))()
+	       loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Works-on-all-executers-20951"))()
 end
 })
 
