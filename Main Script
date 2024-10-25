@@ -293,12 +293,14 @@ local FishTab = Window:MakeTab({
 	Name = "Auto Fish",
 	Callback = function(value)
 	        loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Auto-Fish-20530"))()
+end
 })
 
   FishTab:AddButton({
 	Name = "Auto Fish",
 	Callback = function(value)
 	       loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Auto-Cast-n-Auto-Shake-20992"))()
+end
 })
 
 })
