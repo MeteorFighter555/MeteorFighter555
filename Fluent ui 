@@ -13,8 +13,8 @@ local Window = Fluent:CreateWindow({
 })
 
 Fluent:Notify({
-        Title = "Notification",
-        Content = "This is a notification",
+        Title = "Logged in",
+        Content = "You are logged in as"..Player.name..".",
         SubContent = "SubContent", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
 })
