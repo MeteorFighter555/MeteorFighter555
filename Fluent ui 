@@ -25,12 +25,12 @@ local Tabs = {
     Global = Window:AddTab({ Title = "Global", Icon = "" })
 }
 
-Tab.Main:AddParagraph({
+Tabs.Main:AddParagraph({
     Title = "Thank you for using this!",
     Content = "This is a random project for my own use"
 })
 
-Tab.Main:AddButton({
+Tabs.Main:AddButton({
     Title = "Destroy GUI",
     Description = "It destroy this GUI",
     Callback = function()
