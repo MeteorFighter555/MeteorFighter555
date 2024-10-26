@@ -12,13 +12,6 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
-Fluent:Notify({
-        Title = "Logged in",
-        Content = "You are logged in as "..Player.name..".",
-        SubContent = "Thank you for using this", -- Optional
-        Duration = 15 -- Set to nil to make the notification not disappear
-})
-
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
     Home = Window:AddTab({ Title = "Home", Icon = "" }),
@@ -28,6 +21,13 @@ local Tabs = {
 local Options = Fluent.Options
 
 do
+
+Fluent:Notify({
+        Title = "Logged in",
+        Content = "You are logged in as "..Player.name..".",
+        SubContent = "Thank you for using this", -- Optional
+        Duration = 15 -- Set to nil to make the notification not disappear
+})
 
 Tabs.Home:AddParagraph({
     Title = "Thank you for using this!",
