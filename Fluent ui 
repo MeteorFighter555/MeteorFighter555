@@ -15,8 +15,11 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Home = Window:AddTab({ Title = "Home", Icon = "" }),
-    Main = Window:AddTab({ Title = "Main", Icon = "" })
+    Home = Window:AddTab({ Title = "Home", Icon = "braces" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "code-xml" }),
+    Tsb = Window:AddTab({ Title = "Tsb", Icon = "flame"}),
+    Shaders = Window:AddTab({ Title = "Shaders", Icon = "sun" }),
+    Fish = Window:AddTab({ Title = "Fisch", Icon = "fish" })
 }
 
 Window:SelectTab(1)
@@ -45,6 +48,11 @@ Window:SelectTab(1)
     end
 })
 
+Tabs.Main:AddParagraph({
+        Title = "Universal Scripts",
+        Content = "Have fun I guess"
+    })
+
 Tabs.Main:AddButton({
         Title = "Keyboard",
         Description = "Keyboard for mobile players",
@@ -53,7 +61,249 @@ Tabs.Main:AddButton({
     end
 })
 
+Tabs.Main:AddButton({
+        Title = "Shiftlock",
+        Description = "Shiftlock for mobile players",
+        Callback = function()
+             loadstring(game:HttpGet('https://pastebin.com/raw/CjNsnSDy'))()
+		
+end
+})
 
+Tabs.Main:AddButton({
+        Title = "Esp Script",
+        Description = "See everyone Yay!",
+        Callback = function()
+          local FillColor = Color3.fromRGB(175,25,255)
+local DepthMode = "AlwaysOnTop"
+local FillTransparency = 0.5
+local OutlineColor = Color3.fromRGB(255,255,255)
+local OutlineTransparency = 0
+
+local CoreGui = game:FindService("CoreGui")
+local Players = game:FindService("Players")
+local lp = Players.LocalPlayer
+local connections = {}
+
+local Storage = Instance.new("Folder")
+Storage.Parent = CoreGui
+Storage.Name = "Highlight_Storage"
+
+local function Highlight(plr)
+    local Highlight = Instance.new("Highlight")
+    Highlight.Name = plr.Name
+    Highlight.FillColor = FillColor
+    Highlight.DepthMode = DepthMode
+    Highlight.FillTransparency = FillTransparency
+    Highlight.OutlineColor = OutlineColor
+    Highlight.OutlineTransparency = 0
+    Highlight.Parent = Storage
+    
+    local plrchar = plr.Character
+    if plrchar then
+        Highlight.Adornee = plrchar
+    end
+
+    connections[plr] = plr.CharacterAdded:Connect(function(char)
+        Highlight.Adornee = char
+    end)
+end
+
+Players.PlayerAdded:Connect(Highlight)
+for i,v in next, Players:GetPlayers() do
+    Highlight(v)
+end
+
+Players.PlayerRemoving:Connect(function(plr)
+    local plrname = plr.Name
+    if Storage[plrname] then
+        Storage[plrname]:Destroy()
+    end
+    if connections[plr] then
+        connections[plr]:Disconnect()
+    end
+end)
+   
+end
+})
+
+Tabs.Main:AddButton({
+        Title = "Click TP",
+        Description = "Click to teleport ye",
+        Callback = function()
+             mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+end
+})
+
+Tabs.Main:AddParagraph({
+        Title = "Fun/Slightly Useful",
+        Content = "Random/Cool scripts"
+    })
+
+Tabs.Main:AddButton({
+        Title = "Sonic mode",
+        Description = "Become Sonic GOTTA GO FAST",
+        Callback = function()
+             loadstring(game:HttpGetAsync("https://pastebin.com/raw/uacVtsWe"))()
+end
+})
+
+Tabs.Main:AddButton({
+        Title = "Good Cop Bad Cop",
+        Description = "Become good or bad it's your choice",
+        Callback = function()
+             loadstring(game:HttpGetAsync("https://pastebin.com/raw/hSqRZPLd"))()
+
+end
+})
+
+Tabs.Tsb:AddParagraph({
+        Title = "The Strongest Battlegrounds",
+        Content = "The Strongest Battlegrounds Custom Movesets"
+    })
+
+Tabs.Tsb:AddButton({
+        Title = "Gojo Moveset",
+        Description = "Take the amplified and the reversal...",
+        Callback = function()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua"))()
+	  
+end
+})
+
+Tabs.Tsb:AddButton({
+        Title = "Toji Moveset",
+        Description = "Toji Fushiguro Toji Fushiguro",
+        Callback = function()
+             loadstring(game:HttpGet('https://pastebin.com/raw/VQnyWP5D'))()
+	  
+end
+})
+
+Tabs.Tsb:AddButton({
+        Title = "Kung Fu Moveset",
+        Description = "Everybody Kung Fu fighting",
+        Callback = function()
+             loadstring(game:HttpGet("https://pastebin.com/raw/DqXUTANt"))()
+	  
+end
+})
+
+Tabs.Tsb:AddButton({
+        Title = "Sonic Moveset",
+        Description = "Sonic fighter",
+        Callback = function()
+             loadstring(game:HttpGet("https://pastebin.com/raw/7V1mUBtQ"))()
+		
+end
+})
+
+Tabs.Tsb:AddButton({
+        Title = "Apophenia Moveset",
+        Description = "Grim Reaper basically",
+        Callback = function()
+           getgenv().Music = false
+       getgenv().AttackQuality = 'High'
+       getgenv().ConstantSpeed = false
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
+		  
+end
+})
+
+Tabs.Tsb:AddButton({
+        Title = "Jun Moveset",
+        Description = "This is True Kung Fu",
+        Callback = function()
+             
+end
+})
+
+Tabs.Tsb:AddButton({
+        Title = "Dio Moveset",
+        Description = "ZA WARUDO",
+        Callback = function()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Medley-Taboritsky/RobloxScripting/refs/heads/main/DIO_Garou_TSB"))()
+		
+end
+})
+
+Tabs.Tsb:AddButton({
+        Title = "Aucuara Moveset",
+        Description = "Idk at this point",
+        Callback = function()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
+		
+end
+})
+
+Tabs.Shaders:AddParagraph({
+        Title = "Nice Shaders",
+        Content = "Beautiful Shaders"
+    })
+
+Tabs.Shaders:AddButton({
+        Title = "Rtx GUI",
+        Description = "RTX Shaders GUI",
+        Callback = function()
+             loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+	 
+end
+})
+
+Tabs.Shaders:AddButton({
+        Title = "8 Shaders",
+        Description = "RTX Shaders Extras",
+        Callback = function()
+             loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/RTX%20Gui%20Hub%20Obfuscator'))()
+		
+end
+})
+
+Tabs.Shaders:AddButton({
+        Title = "Bloom Shaders",
+        Description = "Bloom/Extra Brightness",
+        Callback = function()
+             bloom = Instance.new("BloomEffect",game.Lighting) -- BLOOM Properties
+bloom.Intensity = 1
+bloom.Size = 56
+bloom.Threshold = 0.5
+
+blur = Instance.new("BlurEffect",game.Lighting) -- BLUR Properties
+blur.Size = 5
+
+color = Instance.new("ColorCorrectionEffect",game.Ligting) -- COLORCORRECTION Properties
+color.TintColor = Color3.fromRGB(216,216,216)
+
+rays = Instance.new("SunRaysEffect",game.Lighting) -- SUNRAYS Properties
+rays.Intensity = 0.25
+rays.Spread = 1
+
+end
+})
+
+Tabs.Fish:AddParagraph({
+        Title = "FISCH",
+        Content = "I AM JUST A FICH OH PLEASE I AM JUST A FISH"
+    })
+
+Tabs.Fish:AddButton({
+        Title = "Fisch GUI",
+        Description = "your lazy I know",
+        Callback = function()
+             loadstring(game:HttpGet"https://raw.githubusercontent.com/Lythicals/script/main/Fisch.lua")()
+
+end
+})
 
 SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
