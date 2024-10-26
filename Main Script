@@ -290,16 +290,16 @@ local FishTab = Window:MakeTab({
 })
 
   FishTab:AddButton({
-	Name = "Auto Fish",
+	Name = "Fisch Gui",
 	Callback = function(value)
-	        loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Auto-Fish-20530"))()
+	        loadstring(game:HttpGet"https://raw.githubusercontent.com/Lythicals/script/main/Fisch.lua")()
 end
 })
 
   FishTab:AddButton({
-	Name = "Fisch Gui",
+	Name = "Fisch place holder",
 	Callback = function(value)
-	       loadstring(game:HttpGet("https://rawscripts.net/raw/Fisch-Works-on-all-executers-20951"))()
+	       
 end
 })
 
