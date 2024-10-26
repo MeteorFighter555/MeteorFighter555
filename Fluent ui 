@@ -19,10 +19,6 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" })
 }
 
-local Options = Fluent.Options
-
-do
-
 Window:SelectTab(1)
 
     Fluent:Notify({
