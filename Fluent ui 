@@ -23,6 +23,8 @@ local Options = Fluent.Options
 
 do
 
+Window:SelectTab(1)
+
     Fluent:Notify({
         Title = "Login Completed",
         Content = "You are logged in as "..Player.Name..".",
@@ -65,7 +67,5 @@ SaveManager:SetFolder("FluentScriptHub/specific-game")
 
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
-
-Window:SelectTab(1)
 
 SaveManager:LoadAutoloadConfig()
