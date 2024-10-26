@@ -24,3 +24,16 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
     Global = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
+
+MainTab:AddParagraph({
+    Title = "Thank you for using this!",
+    Content = "This is a random project for my own use"
+})
+
+MainTab:AddButton({
+    Title = "Destroy GUI",
+    Description = "It destroy this GUI",
+    Callback = function()
+        Fluent:Destroy()
+    end
+})
