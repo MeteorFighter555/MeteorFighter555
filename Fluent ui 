@@ -21,16 +21,20 @@ Fluent:Notify({
 
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Home = Window:AddTab({ Title = "Home", Icon = "" }),
     Global = Window:AddTab({ Title = "Global", Icon = "" })
 }
 
-Tabs.Main:AddParagraph({
+local Options = Fluent.Options
+
+do
+
+Tabs.Home:AddParagraph({
     Title = "Thank you for using this!",
     Content = "This is a random project for my own use"
 })
 
-Tabs.Main:AddButton({
+Tabs.Home:AddButton({
     Title = "Destroy GUI",
     Description = "It destroy this GUI",
     Callback = function()
