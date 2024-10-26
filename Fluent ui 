@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "Meteor Exploitz Hub",
+    SubTitle = "by MeteorFighter",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Aqua",
+    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+})
+
+Fluent:Notify({
+        Title = "Notification",
+        Content = "This is a notification",
+        SubContent = "SubContent", -- Optional
+        Duration = 5 -- Set to nil to make the notification not disappear
+})
