@@ -14,7 +14,13 @@ local Window = Fluent:CreateWindow({
 
 Fluent:Notify({
         Title = "Logged in",
-        Content = "You are logged in as"..Player.name..".",
+        Content = "You are logged in as "..Player.name..".",
         SubContent = "Thank you for using this", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
 })
+
+-- Fluent provides Lucide Icons, they are optional
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Global = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
