@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
-
+local Player = game.Players.LocalPlayer
 
 local Window = Fluent:CreateWindow({
     Title = "Meteor Exploitz Hub",
@@ -15,6 +15,6 @@ local Window = Fluent:CreateWindow({
 Fluent:Notify({
         Title = "Logged in",
         Content = "You are logged in as"..Player.name..".",
-        SubContent = "SubContent", -- Optional
+        SubContent = "Thank you for using this", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
 })
