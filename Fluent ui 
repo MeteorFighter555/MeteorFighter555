@@ -45,6 +45,16 @@ Window:SelectTab(1)
     end
 })
 
+Tabs.Main:AddButton({
+        Title = "Keyboard",
+        Description = "Keyboard for mobile players",
+        Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    end
+})
+
+
+
 SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
 
