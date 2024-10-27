@@ -6,8 +6,8 @@ local Player = game.Players.LocalPlayer
 local Window = Fluent:CreateWindow({
     Title = "Meteor Exploitz Hub",
     SubTitle = "by Meteorfighter",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(540, 460),
+    TabWidth = 80,
+    Size = UDim2.fromOffset(400, 360),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Darker",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
@@ -27,7 +27,7 @@ Window:SelectTab(1)
     Fluent:Notify({
         Title = "Login Completed",
         Content = "You are logged in as "..Player.Name..".",
-        SubContent = "SubContent", -- Optional
+        SubContent = "Thank you for using this!", -- Optional
         Duration = 15 -- Set to nil to make the notification not disappear
     })
 
@@ -300,7 +300,7 @@ Tabs.Fish:AddButton({
         Title = "Fisch GUI",
         Description = "your lazy I know",
         Callback = function()
-             loadstring(game:HttpGet"https://raw.githubusercontent.com/Lythicals/script/main/Fisch.lua")()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/main/Fisch%20Beta.lua",true))()
 
 end
 })
