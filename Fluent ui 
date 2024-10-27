@@ -16,10 +16,10 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Home = Window:AddTab({ Title = "Home", Icon = "box" }),
-    Main = Window:AddTab({ Title = "Main", Icon = "earth" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "compass" }),
     Tsb = Window:AddTab({ Title = "Tsb", Icon = "flame"}),
     Shaders = Window:AddTab({ Title = "Shaders", Icon = "sun" }),
-    Fish = Window:AddTab({ Title = "Fisch", Icon = "fish-symbol" })
+    Fish = Window:AddTab({ Title = "Fisch", Icon = "droplets" })
 }
 
 Window:SelectTab(1)
