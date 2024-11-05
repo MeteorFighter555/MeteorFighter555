@@ -307,7 +307,7 @@ end
 })
 
 Tabs.Fish:AddButton({
-        Title = "Fisch GUI",
+        Title = "Fisch GUI 2",
         Description = "this is also free",
         Callback = function()
              loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua"))()
