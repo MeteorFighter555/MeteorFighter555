@@ -301,7 +301,7 @@ Tabs.Fish:AddButton({
         Title = "Fisch GUI",
         Description = "your lazy I know",
         Callback = function()
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/main/Fisch%20Beta.lua",true))()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 
 end
 })
