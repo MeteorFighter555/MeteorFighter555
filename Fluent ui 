@@ -15,7 +15,6 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Key = Window:AddTab({ Title = "Key", Icon = "droplets" }),
     Home = Window:AddTab({ Title = "Home", Icon = "box" }),
     Main = Window:AddTab({ Title = "Main", Icon = "compass" }),
     Tsb = Window:AddTab({ Title = "Tsb", Icon = "flame"}),
@@ -308,7 +307,7 @@ end
 
 Tabs.Fish:AddButton({
         Title = "Fisch GUI 2",
-        Description = "this is also free",
+        Description = "this is free",
         Callback = function()
              loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua"))()
 
