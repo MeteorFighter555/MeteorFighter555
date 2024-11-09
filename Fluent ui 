@@ -307,9 +307,10 @@ end
 
 Tabs.Fish:AddButton({
         Title = "Fisch GUI 2",
-        Description = "this is free",
+        Description = "this is cracked lol",
         Callback = function()
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua"))()
+             _G.Authorize = 'DQ9QR-EEWYI-PO11F-CFJFP'
+loadstring(game:HttpGet("https://deity.alphes.net/.lua")){"V1"}
 
 end
 })
